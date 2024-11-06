@@ -1,6 +1,5 @@
 var express = require("express");
 var router = express.Router();
-
 const dataProvider = require("../data/dataProvider.js");
 
 /* GET home page. */
@@ -22,24 +21,6 @@ router.get("/videojuegos/:id", (req, res) => {
   } else {
     res.status(404).render("error", { message: "Videojuego no encontrado" });
   }
-});
-
-// Ruta para manejar la validación de usuario
-router.post("/login", (req, res) => {
-  const { email, password } = req.body;
-  const user = dataProvider.validateUser(email, password);
-  if (user) {
-    res.render("perfil", { user });
-  } else {
-    res.status(401).render("error", { message: "Credenciales incorrectas" });
-  }
-});
-
-// Ruta para añadir un nuevo contacto
-router.post("/contacto", (req, res) => {
-  const { nombre, email, mensaje, info } = req.body;
-  dataProvider.addContacto(nombre, email, mensaje, info);
-  res.render("mensajeEnviado", { nombre });
 });
 
 module.exports = router;

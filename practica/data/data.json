@@ -28,7 +28,7 @@
       "id": 4,
       "titulo": "Fortnite",
       "genero": "Battle Royale",
-      "precio": 0.00,
+      "precio": 79.99,
       "descripcion": "Únete a la batalla en este juego gratuito de Battle Royale.",
       "imagen": "/images/fortnite.jpg"
     },
@@ -79,29 +79,6 @@
       "precio": 59.99,
       "descripcion": "La saga de Master Chief continúa en esta nueva entrega.",
       "imagen": "/images/The Art of Halo Infinite.jpg"
-    }
-  ],
-  "usuarios": [
-    {
-      "id": 1,
-      "username": "gamer1",
-      "email": "gamer1@example.com",
-      "password": "1234"
-    },
-    {
-      "id": 2,
-      "username": "gamer2",
-      "email": "gamer2@example.com",
-      "password": "abcd"
-    }
-  ],
-  "contactos": [
-    {
-      "nombre": "John Doe",
-      "email": "john@example.com",
-      "mensaje": "¿Este juego está en oferta?",
-      "fecha": "2023-11-01",
-      "info": "Consulta sobre precios"
     }
   ]
 }
