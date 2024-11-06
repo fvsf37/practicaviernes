@@ -1,0 +1,107 @@
+{
+  "videojuegos": [
+    {
+      "id": 1,
+      "titulo": "The Legend of Zelda",
+      "genero": "Aventura",
+      "precio": 59.99,
+      "descripcion": "Una aventura épica en Hyrule.",
+      "imagen": "/images/zelda.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Super Mario Odyssey",
+      "genero": "Plataformas",
+      "precio": 49.99,
+      "descripcion": "Una aventura de Mario a través de distintos mundos.",
+      "imagen": "/images/Super Mario Odyssey.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Minecraft",
+      "genero": "Sandbox",
+      "precio": 26.95,
+      "descripcion": "Explora y construye en un mundo hecho de bloques.",
+      "imagen": "/images/Minecraft.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Fortnite",
+      "genero": "Battle Royale",
+      "precio": 0.00,
+      "descripcion": "Únete a la batalla en este juego gratuito de Battle Royale.",
+      "imagen": "/images/fortnite.jpg"
+    },
+    {
+      "id": 5,
+      "titulo": "God of War",
+      "genero": "Acción y aventura",
+      "precio": 39.99,
+      "descripcion": "Kratos se enfrenta a los dioses nórdicos en una épica aventura.",
+      "imagen": "/images/God Of War.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Cyberpunk 2077",
+      "genero": "RPG",
+      "precio": 59.99,
+      "descripcion": "Explora la ciudad de Night City en un futuro distópico.",
+      "imagen": "/images/Cyberpunk 2077.jpg"
+    },
+    {
+      "id": 7,
+      "titulo": "Animal Crossing: New Horizons",
+      "genero": "Simulación",
+      "precio": 49.99,
+      "descripcion": "Construye y personaliza tu isla en este relajante simulador.",
+      "imagen": "/images/Animal Crossing.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "The Witcher 3: Wild Hunt",
+      "genero": "RPG",
+      "precio": 29.99,
+      "descripcion": "Embárcate en una misión épica como Geralt de Rivia.",
+      "imagen": "/images/The Witcher 3 Wild Hunt.jpg"
+    },
+    {
+      "id": 9,
+      "titulo": "Red Dead Redemption 2",
+      "genero": "Acción y aventura",
+      "precio": 59.99,
+      "descripcion": "Vive la vida de un forajido en el Viejo Oeste.",
+      "imagen": "/images/red_dead_redemption_2.jpg"
+    },
+    {
+      "id": 10,
+      "titulo": "Halo Infinite",
+      "genero": "Shooter",
+      "precio": 59.99,
+      "descripcion": "La saga de Master Chief continúa en esta nueva entrega.",
+      "imagen": "/images/The Art of Halo Infinite.jpg"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "gamer1",
+      "email": "gamer1@example.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "username": "gamer2",
+      "email": "gamer2@example.com",
+      "password": "abcd"
+    }
+  ],
+  "contactos": [
+    {
+      "nombre": "John Doe",
+      "email": "john@example.com",
+      "mensaje": "¿Este juego está en oferta?",
+      "fecha": "2023-11-01",
+      "info": "Consulta sobre precios"
+    }
+  ]
+}

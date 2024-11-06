@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= videojuego.titulo %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="detalle">
+      <h1><%= videojuego.titulo %></h1>
+      <img src="<%= videojuego.imagen %>" alt="<%= videojuego.titulo %>" />
+      <p><strong>Género:</strong> <%= videojuego.genero %></p>
+      <p><strong>Precio:</strong> <%= videojuego.precio %> €</p>
+      <p><strong>Descripción:</strong> <%= videojuego.descripcion %></p>
+      <a href="/videojuegos" class="button">Volver al catálogo</a>
+    </div>
+  </body>
+</html>

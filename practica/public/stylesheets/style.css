@@ -1,8 +1,170 @@
+/* Estilos generales */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Estilo del título */
+h1 {
+  color: #007bff;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Enlaces generales */
 a {
-  color: #00B7FF;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0027b3;;
+}
+
+/* Estilo para el catálogo de videojuegos */
+.catalogo {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Estilo de cada tarjeta de videojuego */
+.catalogo li {
+  width: 100%;
+  max-width: 250px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.catalogo li:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo de las imágenes en las tarjetas */
+.catalogo img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  height: 200px; /* Establece una altura fija para la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionarse */
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilo del enlace del título dentro de la tarjeta */
+.catalogo a {
+  display: block;
+  padding: 15px;
+  color: #007bff;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.catalogo a:hover {
+  background-color: #f0f8ff;
+}
+
+/* Descripción de cada videojuego en la tarjeta */
+.catalogo p {
+  padding: 0 15px 15px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Botón de acción */
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+/* Estilo específico para la página de detalles del videojuego */
+.detalle {
+  max-width: 600px; /* Ancho máximo para el contenedor de detalles */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.detalle img {
+  width: 100%;
+  max-width: 400px; /* Ancho máximo de la imagen */
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados para un acabado más elegante */
+  margin: 15px 0;
+}
+
+.detalle h1 {
+  color: #007bff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.detalle p {
+  font-size: 1.1em;
+  color: #555;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.detalle .button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.detalle .button:hover {
+  background-color: #0056b3;
+  color: #ffffff;
 }
