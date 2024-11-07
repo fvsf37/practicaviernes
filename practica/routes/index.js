@@ -16,6 +16,7 @@ router.get("/videojuegos", (req, res) => {
 // Ruta para obtener un videojuego por ID y mostrar sus detalles
 router.get("/videojuegos/:id", (req, res) => {
   const videojuego = dataProvider.getVideojuegoById(req.params.id);
+  res.render("detalleVideojuego", { videojuego }); // Renderiza "detalleVideojuego" en lugar de "videojuego"
 });
 
 module.exports = router;
