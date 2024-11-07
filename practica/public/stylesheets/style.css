@@ -41,7 +41,7 @@ a {
   color: #0056b3;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 a:hover {
@@ -60,13 +60,11 @@ a:hover {
   border: none;
   border-radius: 25px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s;
 }
 
 .button:hover {
   background-color: #003580;
-  transform: translateY(-3px);
-  box-shadow: 0px 5px 15px rgba(0, 85, 179, 0.2);
   color: #ffffff;
 }
 
@@ -85,14 +83,13 @@ a:hover {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s;
   text-align: center;
   padding: 15px;
 }
 
 .catalogo li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 85, 179, 0.15);
+  color: #003580;
 }
 
 .catalogo img {
@@ -109,7 +106,7 @@ a:hover {
   font-weight: bold;
   padding: 15px 0;
   text-align: center;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 .catalogo a:hover {
@@ -139,14 +136,14 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px; /* Espacio entre la imagen y el texto */
+  gap: 30px;
   text-align: left;
   margin-top: 20px;
 }
 
 /* Estilo de la imagen */
 .detalle-imagen {
-  width: 200px; /* Tamaño fijo para mantener la imagen pequeña */
+  width: 200px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -182,13 +179,11 @@ a:hover {
   border: none;
   border-radius: 25px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s;
 }
 
 .detalle .button:hover {
   background-color: #003580;
-  transform: translateY(-3px);
-  box-shadow: 0px 5px 15px rgba(0, 84, 179, 0.993);
 }
 
 /* Header */
@@ -231,6 +226,7 @@ a:hover {
   text-align: center;
   font-size: 0.85em;
   box-sizing: border-box;
+  margin-top: auto;
 }
 
 .footer p {
