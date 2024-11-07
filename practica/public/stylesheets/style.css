@@ -125,8 +125,8 @@ a:hover {
 
 /* Página de detalles del videojuego */
 .detalle {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 40px auto;
   background-color: #ffffff;
   padding: 30px;
   border-radius: 15px;
@@ -134,31 +134,47 @@ a:hover {
   text-align: center;
 }
 
-.detalle img {
-  width: 100%;
-  max-width: 450px;
-  height: auto;
-  border-radius: 12px;
-  margin: 15px 0;
+/* Contenedor flex para imagen y texto */
+.detalle-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* Espacio entre la imagen y el texto */
+  text-align: left;
+  margin-top: 20px;
 }
 
+/* Estilo de la imagen */
+.detalle-imagen {
+  width: 200px; /* Tamaño fijo para mantener la imagen pequeña */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de texto */
+.detalle-texto {
+  max-width: 400px;
+}
+
+/* Título de detalles */
 .detalle h1 {
   color: #0056b3;
-  font-size: 2.2em;
+  font-size: 2em;
   margin-bottom: 10px;
 }
 
+/* Párrafo de descripción en la página de detalles */
 .detalle p {
   font-size: 1.1em;
   color: #555;
-  margin: 10px 0;
-  text-align: left;
+  margin: 5px 0;
 }
 
 .detalle .button {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 30px;
+  padding: 10px 20px;
   font-size: 1em;
   font-weight: bold;
   color: #ffffff;

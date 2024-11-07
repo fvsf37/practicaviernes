@@ -12,11 +12,19 @@
     <!-- Sección de detalles del videojuego -->
     <div class="detalle">
       <h1><%= videojuego.titulo %></h1>
-      <img src="<%= videojuego.imagen %>" alt="<%= videojuego.titulo %>" />
-      <p><strong>Género:</strong> <%= videojuego.genero %></p>
-      <p><strong>Precio:</strong> <%= videojuego.precio %> €</p>
-      <p><strong>Descripción:</strong> <%= videojuego.descripcion %></p>
-      <a href="/videojuegos" class="button">Volver al catálogo</a>
+      <div class="detalle-content">
+        <img
+          src="<%= videojuego.imagen %>"
+          alt="<%= videojuego.titulo %>"
+          class="detalle-imagen"
+        />
+        <div class="detalle-texto">
+          <p><strong>Género:</strong> <%= videojuego.genero %></p>
+          <p><strong>Precio:</strong> <%= videojuego.precio %> €</p>
+          <p><strong>Descripción:</strong> <%= videojuego.descripcion %></p>
+          <a href="/videojuegos" class="button">Volver al catálogo</a>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
