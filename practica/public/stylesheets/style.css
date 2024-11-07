@@ -1,15 +1,20 @@
-/* Tipografía y estilo general */
+/* Estilos globales y estructura principal */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f0f2f5;
   color: #333;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding-top: 70px; /* Espacio reservado para el header */
+  padding-bottom: 50px; /* Espacio reservado para el footer */
 }
 
 /* Contenedor principal */
@@ -24,7 +29,7 @@ body {
   margin: 20px auto;
 }
 
-/* Estilo del título */
+/* Tipografía y enlaces */
 h1 {
   color: #0056b3;
   font-size: 2.5em;
@@ -32,7 +37,6 @@ h1 {
   text-transform: uppercase;
 }
 
-/* Enlaces generales */
 a {
   color: #0056b3;
   text-decoration: none;
@@ -44,7 +48,7 @@ a:hover {
   color: #003580;
 }
 
-/* Botón general */
+/* Estilos de botones */
 .button {
   display: inline-block;
   margin-top: 20px;
@@ -75,7 +79,7 @@ a:hover {
   gap: 25px;
 }
 
-/* Tarjetas individuales en el catálogo */
+/* Tarjetas en el catálogo */
 .catalogo li {
   background-color: #ffffff;
   border-radius: 12px;
@@ -91,7 +95,6 @@ a:hover {
   box-shadow: 0px 8px 20px rgba(0, 85, 179, 0.15);
 }
 
-/* Imagen en cada tarjeta del catálogo */
 .catalogo img {
   width: 100%;
   height: 180px;
@@ -99,7 +102,6 @@ a:hover {
   border-radius: 8px;
 }
 
-/* Enlace del título dentro de cada tarjeta */
 .catalogo a {
   display: block;
   color: #0056b3;
@@ -114,7 +116,6 @@ a:hover {
   color: #003580;
 }
 
-/* Descripción de cada videojuego en la tarjeta */
 .catalogo p {
   padding: 0 15px;
   color: #666;
@@ -122,7 +123,7 @@ a:hover {
   line-height: 1.5;
 }
 
-/* Detalles del videojuego */
+/* Página de detalles del videojuego */
 .detalle {
   max-width: 600px;
   margin: 0 auto;
@@ -147,7 +148,6 @@ a:hover {
   margin-bottom: 10px;
 }
 
-/* Párrafo de descripción en la página de detalles */
 .detalle p {
   font-size: 1.1em;
   color: #555;
@@ -155,7 +155,6 @@ a:hover {
   text-align: left;
 }
 
-/* Botón específico en la página de detalles */
 .detalle .button {
   display: inline-block;
   margin-top: 20px;
@@ -174,4 +173,50 @@ a:hover {
   background-color: #003580;
   transform: translateY(-3px);
   box-shadow: 0px 5px 15px rgba(0, 84, 179, 0.993);
+}
+
+/* Header */
+.navbar {
+  width: 100%;
+  padding: 15px;
+  background-color: #0056b3;
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056b3;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.85em;
+  box-sizing: border-box;
+}
+
+.footer p {
+  margin: 0;
 }

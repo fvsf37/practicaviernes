@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
+    <!-- Header -->
+    <%- include('partials/header') %>
+
+    <!-- Sección de detalles del videojuego -->
     <div class="detalle">
       <h1><%= videojuego.titulo %></h1>
       <img src="<%= videojuego.imagen %>" alt="<%= videojuego.titulo %>" />
@@ -14,5 +18,8 @@
       <p><strong>Descripción:</strong> <%= videojuego.descripcion %></p>
       <a href="/videojuegos" class="button">Volver al catálogo</a>
     </div>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
   </body>
 </html>
