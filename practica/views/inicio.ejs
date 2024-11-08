@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RetroBlog - Un blog para amantes del retro</title>
+    <link rel="stylesheet" href="/stylesheets/inicio.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <%- include('partials/header') %>
+
+    <!-- Contenido del catálogo -->
+    <div class="container">
+      <h2>Últimas entradas del blog</h2>
+      <ul class="catalogo">
+        <% posts.forEach(post => { %>
+        <li class="post-item">
+          <a href="/posts/<%= post.id %>">
+            <img
+              src="<%= post.thumbnail %>"
+              alt="<%= post.title %>"
+              class="post-thumbnail"
+            />
+            <div class="post-overlay">
+              <h3><%= post.title %></h3>
+            </div>
+          </a>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+  </body>
+</html>

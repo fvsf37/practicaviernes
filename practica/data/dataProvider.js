@@ -1,15 +1,19 @@
-const data = require("./data.json");
+var posts = require("./posts.json");
 
-// Funciones para videojuegos
-function getAllVideojuegos() {
-  return data.videojuegos;
+function getAllPosts() {
+  return posts;
 }
 
-function getVideojuegoById(id) {
-  return data.videojuegos.find((juego) => juego.id == id);
+function getPostById(id) {
+  return posts.find((a) => a.id == id);
+}
+
+function getCategories() {
+  return [...new Set(posts.map((post) => post.category))];
 }
 
 module.exports = {
-  getAllVideojuegos,
-  getVideojuegoById,
+  getAllPosts,
+  getPostById,
+  getCategories,
 };

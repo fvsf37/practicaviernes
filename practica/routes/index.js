@@ -1,22 +1,21 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 const dataProvider = require("../data/dataProvider.js");
 
-/* GET home page. */
-router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express" });
+// Ruta para la página de inicio que renderiza "inicio.ejs"
+router.get("/", (req, res) => {
+  const posts = dataProvider.getAllPosts();
+  res.render("inicio", { posts });
 });
 
-// Ruta para obtener todos los videojuegos y renderizarlos
-router.get("/videojuegos", (req, res) => {
-  const videojuegos = dataProvider.getAllVideojuegos();
-  res.render("videojuegos", { videojuegos });
-});
-
-// Ruta para obtener un videojuego por ID y mostrar sus detalles
-router.get("/videojuegos/:id", (req, res) => {
-  const videojuego = dataProvider.getVideojuegoById(req.params.id);
-  res.render("detalleVideojuego", { videojuego }); // Renderiza "detalleVideojuego" en lugar de "videojuego"
+// Ruta para obtener los detalles de un artículo y renderizar "entrada.ejs"
+router.get("/posts/:id", (req, res) => {
+  const post = dataProvider.getPostById(req.params.id);
+  if (post) {
+    res.render("entrada", { post });
+  } else {
+    res.status(404).render("error", { message: "Artículo no encontrado" });
+  }
 });
 
 module.exports = router;

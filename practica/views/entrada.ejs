@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= post.title %></title>
+    <link rel="stylesheet" href="/stylesheets/entrada.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <%- include('partials/header') %>
+
+    <!-- Contenedor principal -->
+    <div class="content-container">
+      <!-- Imagen destacada -->
+      <div class="featured-image">
+        <img src="<%= post.image %>" alt="<%= post.title %>" />
+      </div>
+
+      <!-- Título -->
+      <h1 class="post-title"><%= post.title %></h1>
+
+      <!-- Introducción -->
+      <p class="intro"><%= post.intro %></p>
+
+      <!-- Categoría -->
+      <p class="category">
+        <a href="/categoria/<%= post.category %>"><%= post.category %></a>
+      </p>
+
+      <!-- Contenido del post -->
+      <div class="post-content"><%- post.content %></div>
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+  </body>
+</html>
